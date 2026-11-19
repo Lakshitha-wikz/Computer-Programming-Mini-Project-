@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CompStock · Small Shop Electronic Components Inventory and Sales POS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function() {
+      var saved = localStorage.getItem('compstock_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', saved);
+    })();
+  </script>
+</head>
+<body>
+  <!-- React 18 Application Root Mount Point -->
+  <div id="root"></div>
+
+  <!-- React 18 Production Single Page Application Bundle (esbuild) -->
+  <script src="dist/bundle.js"></script>
+
+  <!-- CompStock Application Business Logic & API Client Scripts -->
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/inventory.js"></script>
+  <script src="js/sales.js"></script>
+  <script src="js/invoices.js"></script>
+  <script src="js/customers.js"></script>
+  <script src="js/reports.js"></script>
+  <script src="js/audit.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/users.js"></script>
+</body>
+</html>
